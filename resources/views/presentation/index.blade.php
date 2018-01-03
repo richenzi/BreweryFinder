@@ -266,7 +266,7 @@
                 // 'height': $map.outerHeight()
             });
 
-            var url = '{{ action('Api\v1\BreweryController@getBreweries') }}';
+            var url = '{{ action('Api\v1\BreweryController@searchBreweries') }}';
             url += '/?lat=' + map.getCenter().lat();
             url += '&lng=' + map.getCenter().lng();
 
