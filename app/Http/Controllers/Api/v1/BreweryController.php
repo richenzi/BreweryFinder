@@ -31,8 +31,6 @@ class BreweryController extends Controller
         $lng = Input::get('lng');
         $radius = Input::get('radius') ?? 100;
 
-        return json_decode(File::get(public_path('data.txt')));
-
         $result = BreweryApiService::request('search/geo/point', ['lat' => $lat, 'lng' => $lng, 'radius' => $radius]);
         $data = isset($result['data']) ?
             $this->extractData($result['data']) :
