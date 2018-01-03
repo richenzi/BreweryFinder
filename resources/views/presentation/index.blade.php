@@ -64,7 +64,8 @@
                 <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
                     vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
                     cursus magna.</p>
-                <p><a class="btn btn-secondary" target="_blank" rel="noopener" href="http://www.brewerydb.com/developers" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-secondary" target="_blank" rel="noopener"
+                      href="http://www.brewerydb.com/developers" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <img class=""
@@ -74,7 +75,8 @@
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
                     mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                     condimentum nibh.</p>
-                <p><a class="btn btn-secondary" target="_blank" rel="noopener" href="https://developers.google.com/maps/" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-secondary" target="_blank" rel="noopener"
+                      href="https://developers.google.com/maps/" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <img class="rounded-circle"
@@ -84,7 +86,8 @@
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
                     porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
                     ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" target="_blank" rel="noopener" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="#" target="_blank" rel="noopener" role="button">View details
+                        &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -94,48 +97,48 @@
         {{--<hr class="featurette-divider">--}}
 
         {{--<div class="row featurette">--}}
-            {{--<div class="col-md-7">--}}
-                {{--<h2 class="featurette-heading">First featurette heading. <span--}}
-                            {{--class="text-muted">It'll blow your mind.</span></h2>--}}
-                {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
-                    {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
-                    {{--tellus ac cursus commodo.</p>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-5">--}}
-                {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
-                     {{--alt="Generic placeholder image">--}}
-            {{--</div>--}}
+        {{--<div class="col-md-7">--}}
+        {{--<h2 class="featurette-heading">First featurette heading. <span--}}
+        {{--class="text-muted">It'll blow your mind.</span></h2>--}}
+        {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
+        {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
+        {{--tellus ac cursus commodo.</p>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-5">--}}
+        {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
+        {{--alt="Generic placeholder image">--}}
+        {{--</div>--}}
         {{--</div>--}}
 
         {{--<hr class="featurette-divider">--}}
 
         {{--<div class="row featurette">--}}
-            {{--<div class="col-md-7 order-md-2">--}}
-                {{--<h2 class="featurette-heading">Oh yeah, it's that good. <span--}}
-                            {{--class="text-muted">See for yourself.</span></h2>--}}
-                {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
-                    {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
-                    {{--tellus ac cursus commodo.</p>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-5 order-md-1">--}}
-                {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
-                     {{--alt="Generic placeholder image">--}}
-            {{--</div>--}}
+        {{--<div class="col-md-7 order-md-2">--}}
+        {{--<h2 class="featurette-heading">Oh yeah, it's that good. <span--}}
+        {{--class="text-muted">See for yourself.</span></h2>--}}
+        {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
+        {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
+        {{--tellus ac cursus commodo.</p>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-5 order-md-1">--}}
+        {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
+        {{--alt="Generic placeholder image">--}}
+        {{--</div>--}}
         {{--</div>--}}
 
         {{--<hr class="featurette-divider">--}}
 
         {{--<div class="row featurette">--}}
-            {{--<div class="col-md-7">--}}
-                {{--<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>--}}
-                {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
-                    {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
-                    {{--tellus ac cursus commodo.</p>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-5">--}}
-                {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
-                     {{--alt="Generic placeholder image">--}}
-            {{--</div>--}}
+        {{--<div class="col-md-7">--}}
+        {{--<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>--}}
+        {{--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis--}}
+        {{--euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,--}}
+        {{--tellus ac cursus commodo.</p>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-5">--}}
+        {{--<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"--}}
+        {{--alt="Generic placeholder image">--}}
+        {{--</div>--}}
         {{--</div>--}}
 
         <hr class="featurette-divider">
@@ -148,7 +151,8 @@
     <!-- FOOTER -->
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>Richard Vachula &middot; <a href="#">Github</a></p>
+        <p>Richard Vachula &middot; <a href="https://github.com/richenzi/BreweryFinder" target="_blank" rel="noopener">Github</a>
+        </p>
     </footer>
 
     <div id="loader" style="display: none" class="hidden">
