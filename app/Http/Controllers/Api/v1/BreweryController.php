@@ -21,7 +21,13 @@ class BreweryController extends Controller
             $params['ids'] = Input::get('ids');
         }
 
-        return json_encode(BreweryApiService::request('breweries', $params));
+        return BreweryApiService::request('breweries', $params);
+    }
+
+
+    public function getBrewery($id)
+    {
+        return BreweryApiService::request('brewery/' . $id, []);
     }
 
 
