@@ -61,20 +61,20 @@
                      src="{{ asset('images/brewerydb.png') }}"
                      alt="Generic placeholder image" width="140" height="140">
                 <h2>BreweryDB</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                    vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                    cursus magna.</p>
+                <p>BreweryDB is open library of breweries and beers from all around the world. The
+                    library is updated by users. For breweries, they keep track of information such as location,
+                    website, phone numbers, descriptions, logos, etc. For beers, they keep track of style, coloring,
+                    bitterness, availability, labels and more.</p>
                 <p><a class="btn btn-secondary" target="_blank" rel="noopener"
-                      href="http://www.brewerydb.com/developers" role="button">View details &raquo;</a></p>
+                      href="http://www.brewerydb.com/" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <img class=""
                      src="{{ asset('images/google-maps.png') }}"
                      alt="Generic placeholder image" width="140" height="140">
                 <h2>Google Maps</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                    mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh.</p>
+                <p>The Google Maps API allow for the embedding of Google Maps onto web pages of outside developers,
+                    using a simple JavaScript interface. API is used to display breweries near given location in radius of 100 miles.</p>
                 <p><a class="btn btn-secondary" target="_blank" rel="noopener"
                       href="https://developers.google.com/maps/" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
@@ -83,9 +83,7 @@
                      src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
                      alt="Generic placeholder image" width="140" height="140">
                 <h2>Custom API</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                    ut fermentum massa justo sit amet risus.</p>
+                <p>API allows users to search for breweries established in given year.</p>
                 <p><a class="btn btn-secondary" href="#" target="_blank" rel="noopener" role="button">View details
                         &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
@@ -182,10 +180,10 @@
     function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 8,
+            zoom: 14,
             center: {
-                lat: 35.772096,
-                lng: -78.638614
+                lat: 50.0796833,
+                lng: 14.3896311
             }
         });
 
