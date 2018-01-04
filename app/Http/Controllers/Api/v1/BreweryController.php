@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
 use Facades\App\Services\BreweryApiService;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Log;
 
 class BreweryController extends Controller
 {
@@ -21,7 +21,13 @@ class BreweryController extends Controller
             $params['ids'] = Input::get('ids');
         }
 
-        return json_encode(BreweryApiService::request('breweries', $params));
+        return BreweryApiService::request('breweries', $params);
+    }
+
+
+    public function getBrewery($id)
+    {
+        return BreweryApiService::request('brewery/' . $id, []);
     }
 
 
@@ -44,15 +50,19 @@ class BreweryController extends Controller
     {
         $breweries = [];
 
-        foreach ($data as $index => $brewery) {
-            $breweries[] = [
-                'name' => $brewery['brewery']['name'],
-                'website' => $brewery['brewery']['website'] ?? '',
-                'established' => $brewery['brewery']['established'] ?? '',
-                'image' => $brewery['brewery']['images']['medium'] ?? '',
-                'latitude' => $brewery['latitude'],
-                'longitude' => $brewery['longitude'],
-            ];
+        foreach ($data as $brewery) {
+            try {
+                $breweries[] = [
+                    'name' => $brewery['brewery']['name'],
+                    'website' => $brewery['brewery']['website'] ?? '',
+                    'established' => $brewery['brewery']['established'] ?? '',
+                    'image' => $brewery['brewery']['images']['medium'] ?? '',
+                    'latitude' => $brewery['latitude'],
+                    'longitude' => $brewery['longitude'],
+                ];
+            } catch (\Exception $e) {
+                Log::info('exception: ' . $brewery['latitude'] . ', ' . $brewery['longitude']);
+            }
         }
 
         return $breweries;
