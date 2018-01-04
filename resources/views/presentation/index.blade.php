@@ -196,9 +196,7 @@
 
         var input = $('#pac-input')[0];
         var searchBox = new google.maps.places.SearchBox(input);
-        var autocomplete = new google.maps.places.Autocomplete(input);
 
-        autocomplete.setComponentRestrictions({'country': ['us']});
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
