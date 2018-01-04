@@ -1,5 +1,5 @@
 # BreweryFinder
 
-Find and display breweries near given location (US only).
+Find and display breweries near given location.
 
 API used: Google Maps and BreweryDB
