@@ -21,13 +21,19 @@ class BreweryController extends Controller
             $params['ids'] = Input::get('ids');
         }
 
-        return BreweryApiService::request('breweries', $params);
+        $resp = BreweryApiService::request('breweries', $params);
+        return  $resp['status'] == 'failure' ?
+            response($resp)->setStatusCode(400) :
+            $resp;
     }
 
 
     public function getBrewery($id)
     {
-        return BreweryApiService::request('brewery/' . $id, []);
+        $resp = BreweryApiService::request('brewery/' . $id, []);
+        return  $resp['status'] == 'failure' ?
+            response($resp)->setStatusCode(400) :
+            $resp;
     }
 
 
