@@ -74,7 +74,8 @@
                      alt="Generic placeholder image" width="140" height="140">
                 <h2>Google Maps</h2>
                 <p>The Google Maps API allow for the embedding of Google Maps onto web pages of outside developers,
-                    using a simple JavaScript interface. API is used to display breweries near given location in radius of 100 miles.</p>
+                    using a simple JavaScript interface. API is used to display breweries near given location in radius
+                    of 100 miles.</p>
                 <p><a class="btn btn-secondary" target="_blank" rel="noopener"
                       href="https://developers.google.com/maps/" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
@@ -83,8 +84,9 @@
                      src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
                      alt="Generic placeholder image" width="140" height="140">
                 <h2>Custom API</h2>
-                <p>API allows users to search for breweries established in given year.</p>
-                <p><a class="btn btn-secondary" href="#" target="_blank" rel="noopener" role="button">View details
+                <p>API allows users to search for information about breweries.</p>
+                <p><a class="btn btn-secondary" href="https://app.swaggerhub.com/apis/rich1/BreweryFinder/1.0.0"
+                      target="_blank" rel="noopener" role="button">View details
                         &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
