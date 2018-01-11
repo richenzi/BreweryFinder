@@ -54,6 +54,16 @@
 
     <div class="container marketing">
 
+        <div class="row" style="margin-bottom: 20px">
+            Set radius:
+            <div class="col-md-2">
+                <input type="number" value="100" max="100" min="0" step="1" class="form-control" name="radius">
+            </div>
+            <div class="col-md-2">
+                <button id="refresh" style="border: 1px solid black;" class="btn btn-default">Reload</button>
+            </div>
+        </div>
+
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
@@ -259,7 +269,6 @@
         map.addListener('dragend', handlePositionChange);
 
         function handlePositionChange() {
-            console.log('bla');
 
             $loader.css({
                 // 'left': $map.offset().left,
@@ -271,6 +280,7 @@
             var url = '{{ action('Api\v1\BreweryController@searchBreweries') }}';
             url += '/?lat=' + map.getCenter().lat();
             url += '&lng=' + map.getCenter().lng();
+            url += '&radius=' + $('[name="radius"]').val();
 
             $.get(url)
                 .done(function (data) {
@@ -336,6 +346,8 @@
         }
 
         handlePositionChange();
+
+        $('#refresh').on('click', handlePositionChange);
 
     }
 
