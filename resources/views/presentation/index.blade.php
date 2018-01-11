@@ -54,15 +54,23 @@
 
     <div class="container marketing">
 
-        <div class="row" style="margin-bottom: 20px">
-            Set radius:
-            <div class="col-md-2">
-                <input type="number" value="100" max="100" min="0" step="1" class="form-control" name="radius">
+        <form style="margin-bottom: 40px" action="" method="post">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label>Radius:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="number" value="100" max="100" min="0" step="1" class="form-control" name="radius">
+                            <span class="input-group-btn">
+                            <button id="refresh" class="btn btn-secondary">Reload</button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2">
-                <button id="refresh" style="border: 1px solid black;" class="btn btn-default">Reload</button>
-            </div>
-        </div>
+        </form>
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -347,7 +355,10 @@
 
         handlePositionChange();
 
-        $('#refresh').on('click', handlePositionChange);
+        $('#refresh').on('click', function (e) {
+            e.preventDefault();
+            handlePositionChange()
+        });
 
     }
 
